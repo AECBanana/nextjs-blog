@@ -3,9 +3,10 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Date from '../components/date'
 
 const name = 'AeCw'
-export const siteTitle = 'Next.js Blog Website'
+export const siteTitle = 'AeCw Blog'
 
 export default function Layout({ children, home }) {
     return (
@@ -46,8 +47,8 @@ export default function Layout({ children, home }) {
                                     priority
                                     src="/images/profile.jpg"
                                     className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
+                                    height={144}
+                                    width={144}
                                     alt={name}
                                 />
                             </a>
