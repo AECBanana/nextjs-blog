@@ -10,7 +10,7 @@ export const siteTitle = 'AeCw Blog'
 
 export default function Layout({ children, home }) {
     return (
-        <div className={styles.container}>
+        <div className={styles.flex}>
             <head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -26,8 +26,8 @@ export default function Layout({ children, home }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </head>
-            <header className={styles.header}>
-                {home ? (
+            <div className={styles.container}>
+                <header>
                     <>
                         <Image
                             priority
@@ -39,36 +39,20 @@ export default function Layout({ children, home }) {
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
                     </>
+                </header>
+            </div>
+            <div className={styles.card}>
+                <main>{children}</main>
+                {home ? (
+                    <p className={utilStyles.colorInherit}>到头了</p>
                 ) : (
-                    <>
+                    <div className={styles.backToHome}>
                         <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/profile.jpg"
-                                    className={utilStyles.borderCircle}
-                                    height={144}
-                                    width={144}
-                                    alt={name}
-                                />
-                            </a>
+                            <p>← Back</p>
                         </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
-                    </>
+                    </div>
                 )}
-            </header>
-            <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← 返回</a>
-                    </Link>
-                </div>
-            )}
-        </div>
+            </div>
+        </div >
     )
 }

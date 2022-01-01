@@ -4,6 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .headingXl {
@@ -12,14 +13,14 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
-  text-shadow: 2px 0rem #00c2f3;
+  box-shadow: -1rem 0rem rgb(245, 230, 25);
 }
 
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
-  text-shadow: 3px 0rem #f3db00;
+  box-shadow: -1rem 0rem rgb(245, 95, 25);
 }
 
 .headingMd {
