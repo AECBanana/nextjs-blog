@@ -55,3 +55,10 @@
 .lightText {
   color: #666;
 }
+.linkIcon a {
+  margin: 0.5rem;
+}
+.linkIcon a:hover{
+  background-color: #00b7ff;
+  padding: 1ch;
+}

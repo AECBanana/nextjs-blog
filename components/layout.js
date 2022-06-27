@@ -38,6 +38,26 @@ export default function Layout({ children, home }) {
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <div className={utilStyles.linkIcon}>
+                            <a href='https://github.com/AECBanana'>
+                                <Image
+                                    layout='fixed'
+                                    src="/icon/github.png"
+                                    height={25}
+                                    width={25}
+                                />
+                            </a>
+                            <a href='mailto:aecbanana@outlook.com'>
+                                <Image
+                                    layout='fixed'
+                                    src="/icon/mail-fill.png"
+                                    height={25}
+                                    width={25}
+                                />
+                            </a>
+                        </div>
+
+
                     </>
                 </header>
             </div>
