@@ -2,7 +2,7 @@
 title: '[OSU]Skin Cuborld v2'
 date: '2022-06-20'
 ---
-#update
+# Update
 更新了mania部分
 优化了note
 配色更加合理
@@ -18,7 +18,7 @@ date: '2022-06-20'
 
 ![alt 1](https://rino.xn--xj8hhl.tk/images/screenshot104.jpg)
 
-##Download
+## Download
 
 [Github](https://github.com/AECBanana/Cuborld/releases)
 
