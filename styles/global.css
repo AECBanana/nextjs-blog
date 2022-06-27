@@ -6,7 +6,8 @@ body {
   line-height: 1.6;
   font-size: 18px;
   background-color: #ffffff;
-  background-image: url(https://api.ghser.com/random/api.php);
+  /* background-image: url(https://api.ghser.com/random/api.php); */
+  background-color: #00b7ff;
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
@@ -29,4 +30,19 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+button {
+  color: #ffffff;
+  background-color: #f30065;
+  border: none;
+  font-size: 18px;
+  padding: 1rem;
+}
+button:hover {
+  color:  #f30065;
+  background-color: #ffffff;
+  box-shadow: 0.2rem 0.2rem rgb(250, 237, 50);
+  border: none;
+  font-size: 18px;
+  padding: 1rem;
 }
