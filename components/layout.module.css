@@ -2,7 +2,7 @@
   padding: 2rem;
   background-color: rgb(255, 255, 255);
   /* border-radius: 1.8rem; */
-  margin: 2rem 1rem 2rem;
+  margin: 0.5rem;
   width: auto;
   flex:1;
   text-align: center;
@@ -31,7 +31,7 @@
   background-color: rgb(255, 255, 255);
   /* border-radius: 1.8rem; */
   padding: 2rem;
-  margin: 2rem 1rem 2rem;
+  margin: 0.5rem;
   width: auto;
   flex:5;
   /* backdrop-filter: blur(20px); */
