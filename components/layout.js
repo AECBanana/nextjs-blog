@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 
+
 const name = 'AeCw'
 export const siteTitle = 'AeCw Blog'
 
@@ -28,49 +29,45 @@ export default function Layout({ children, home }) {
             </head>
             <div className={styles.container}>
                 <header>
-                    <>
-                        <Image
-                            priority
-                            src="/images/profile.jpg"
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
-                            alt={name}
-                        />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                        <div className={utilStyles.linkIcon}>
-                            <a href='https://github.com/AECBanana'>
-                                <Image
-                                    layout='fixed'
-                                    src="/icon/github.png"
-                                    height={25}
-                                    width={25}
-                                />
-                            </a>
-                            <a href='mailto:aecbanana@outlook.com'>
-                                <Image
-                                    layout='fixed'
-                                    src="/icon/mail-fill.png"
-                                    height={25}
-                                    width={25}
-                                />
-                            </a>
+                    <div class='card w-144 bg-base-100 shadow-xl'>
+                        <div class='card-body items-center text-center'>
+                            <div class='avatar'>
+                                <div class='w-114 rounded-full'>
+                                    <Image
+                                        priority
+                                        src="/images/profile.jpg"
+                                        className={utilStyles.borderCircle}
+                                        height={144}
+                                        width={144}
+                                        alt={name}
+                                    />
+                                </div>
+                            </div>
+                            <h1 class='card-title'>{name}</h1>
+                            <div class='card-actions '>
+                                <button class="btn btn-sm btn-ghost"><a href='https://github.com/AECBanana'>Github</a></button>
+                                <button class="btn btn-sm btn-ghost"><a href='mailto:aecbanana@outlook.com'>邮箱</a></button>
+                            </div>
+
                         </div>
-
-
-                    </>
+                    </div>
                 </header>
             </div>
             <div className={styles.card}>
                 <main>{children}</main>
                 {home ? (
-                    <p className={utilStyles.colorInherit}>到头了</p>
-                ) : (
-                    <div className={styles.backToHome}>
-                        <Link href="/">
-                            <p>← Back</p>
-                        </Link>
+                    <div tabindex="0" class="collapse">
+                        <div class="collapse-title text-center font-medium">
+                            到头了
+                        </div>
+                        <div class="collapse-content text-center">
+                            <p>真的到头了（￣︶￣）↗　</p>
+                        </div>
                     </div>
+                ) : (
+
+                    <></>
+
                 )}
             </div>
         </div >

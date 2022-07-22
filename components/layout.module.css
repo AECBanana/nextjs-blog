@@ -1,18 +1,21 @@
 .container {
   padding: 2rem;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   /* border-radius: 1.8rem; */
   margin: 0.5rem;
   width: auto;
-  flex:1;
-  text-align: center;
+  flex: 1;
+  max-width: 400px;
+  /* text-align: center; */
   /* backdrop-filter: blur(20px); */
-  max-height: 20rem;
+  /* max-height: 20rem; */
 }
+
 .header {
   flex-direction: column;
   align-items: center;
 }
+
 .backToHome {
   border: none;
   background-color: aliceblue;
@@ -22,30 +25,26 @@
   text-align: center;
   transition-duration: 0.1s;
 }
+
 .backToHome:hover {
   background-color: #00b7ff;
   color: rgb(255, 255, 255);
   box-shadow: 0.2rem 0.2rem rgb(250, 237, 50);
 }
+
 .card {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   /* border-radius: 1.8rem; */
   padding: 2rem;
   margin: 0.5rem;
   width: auto;
-  flex:5;
+  flex: 5;
+  max-width: 800px;
   /* backdrop-filter: blur(20px); */
 }
+
 .flex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-.pdf {
-  background-color: rgba(240, 248, 255, 0.85);
-  border-radius: 1.8rem;
-  width: auto;
-  height: auto;
-  backdrop-filter: blur(20px);
-  padding: 2rem;
 }

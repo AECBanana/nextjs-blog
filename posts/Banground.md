@@ -1,6 +1,7 @@
 ---
 title: 'BanGround'
 date: '2021-12-12'
+cover: 'https://rino.xn--xj8hhl.tk/images/IMG_0371.PNG'
 ---
 # BanGround UI
 

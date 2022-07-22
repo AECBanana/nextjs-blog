@@ -1,6 +1,7 @@
 ---
 title: '[OSU]Skin Cuborld v2'
 date: '2022-06-20'
+cover: 'https://rino.xn--xj8hhl.tk/images/screenshot101.jpg'
 ---
 # Update
 更新了mania部分

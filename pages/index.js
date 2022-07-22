@@ -19,26 +19,53 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet"></link>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+      <section>
+        <div class='card card-compact shadow-xl bg-base-100'>
+          <div class='card-body'>
+            <h2 class='card-title'>Works</h2>
+            <ul>
+              {allPostsData.map(({ id, date, title, cover }) => (
+                <li className={utilStyles.listItem} key={id}>
+                  <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src={cover} alt="Cover" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">{title}</h2>
+                      <p><Date dateString={date} /></p>
+                      <div class="card-actions justify-end">
+                        <a href={`/posts/${id}`}><button class="btn btn-primary">View</button></a>
+                      </div>
+                    </div>
+                  </div>
 
-          ))}
-        </ul>
+
+
+                  {/* <div class="card card-side bg-base-100 shadown-xl">
+                    <figure><img src={cover}></img></figure>
+                    <div class="card-body bg-base-200">
+                      <h2 class="card-title">{title}</h2>
+                      <p><small className={utilStyles.lightText}>
+                        <Date dateString={date} />
+                      </small></p>
+                      <div class="card-actions justify-end">
+                        <a href={`/posts/${id}`}>
+                          <button class="btn">
+                            <p>查看</p>
+                          </button>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div> */}
+                </li>
+              ))}
+            </ul>
+
+
+          </div>
+
+        </div>
+
       </section>
     </Layout>
   )
