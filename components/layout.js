@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
                             <h1 class='card-title'>{name}</h1>
                             <div class='card-actions '>
                                 <button class="btn btn-sm btn-ghost"><a href='https://github.com/AECBanana'>Github</a></button>
-                                <button class="btn btn-sm btn-ghost"><a href='mailto:aecbanana@outlook.com'>邮箱</a></button>
+                                <button class="btn btn-sm btn-ghost"><a href='mailto:aecbanana@outlook.com'>邮箱 / Email</a></button>
                             </div>
 
                         </div>
