@@ -11,7 +11,7 @@ export default function Post({ postData }) {
             <div class="text-sm breadcrumbs">
                 <ul>
                     <li><a href="/">
-                        <button class="btn btn-ghost">Back</button>
+                        <button class="btn btn-ghost">Home</button>
                     </a></li>
                     <li><a>{postData.id}</a></li>
                 </ul>

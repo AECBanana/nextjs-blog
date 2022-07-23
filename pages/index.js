@@ -14,6 +14,7 @@ export async function getStaticProps() {
   }
 }
 
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -26,15 +27,18 @@ export default function Home({ allPostsData }) {
             <h1>Works</h1>
             <div class='not-prose'>
               <ul>
-                {allPostsData.map(({ id, date, title, cover }) => (
+                {allPostsData.map(({ id, date, title, cover, tag, tagType }) => (
                   <li className={utilStyles.listItem} key={id}>
                     <div class="card card-compact bg-base-100 shadow-xl">
                       <figure><img src={cover} alt="Cover" /></figure>
                       <div class="card-body">
-                        <h2 class="card-title">{title}</h2>
+                        <h2 class="card-title">{title}<span id='badge' class='badge badge-secondary badge-outline'>{tag}</span></h2>
+
+
                         <p><Date dateString={date} /></p>
                         <div class="card-actions justify-end">
-                          <a href={`/posts/${id}`}><button class="btn btn-primary btn-wide">View / 查看</button></a>
+
+                          <a href={`/posts/${id}`}><button class="btn btn-primary btn-wide text-base-100">View / 查看</button></a>
                         </div>
                       </div>
                     </div>
