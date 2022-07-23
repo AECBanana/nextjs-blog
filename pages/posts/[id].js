@@ -8,20 +8,32 @@ import Link from 'next/link'
 export default function Post({ postData }) {
     return (
         <Layout>
+            <div class="text-sm breadcrumbs">
+                <ul>
+                    <li><a href="/">
+                        <button class="btn btn-ghost">Back</button>
+                    </a></li>
+                    <li><a>{postData.id}</a></li>
+                </ul>
+            </div>
+
             <div class='card card-compact shadow-xl bg-base-100'>
                 <head>
                     <title>{postData.title}</title>
                 </head>
+
                 <div class='card-body'>
                     <article>
-                        <a href="/">
+
+                        {/* <a href="/">
                             <button class="btn btn-ghost">Back</button>
-                        </a>
+                        </a> */}
                         <h1 class='card-title'>{postData.title}</h1>
                         <div className={utilStyles.lightText}>
                             <Date dateString={postData.date} />
                         </div>
-                        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                        <br />
+                        <div class='prose prose-img:rounded-xl max-w-none' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                     </article>
                 </div>
 
