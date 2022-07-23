@@ -70,6 +70,20 @@ export default function Layout({ children, home }) {
 
                 )}
             </div>
+            <footer class="footer p-10 bg-neutral-focus text-neutral-content">
+                <div>
+                    <span class="footer-title">友情链接</span>
+                    <a class="link link-hover">招租位</a>
+                    <a class="link link-hover">招租位</a>
+                    <a class="link link-hover">招租位</a>
+                    <a class="link link-hover">招租位</a>
+                </div>
+                <div>
+                    <span class="footer-title">蓝白碗</span>
+                    <a class="link link-hover" href='https://kaihei.co/1J8AVk'>KOOK</a>
+                    <a class="link link-hover" >QQ群 1072271422</a>
+                </div>
+            </footer>
         </div >
     )
 }

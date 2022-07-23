@@ -2,6 +2,7 @@
 title: '[OSU]Skin Cuborld'
 date: '2022-01-01'
 cover: 'https://rino.xn--xj8hhl.tk/images/screenshot025.jpg'
+tag: '作品'
 ---
 # Cuborld
 
