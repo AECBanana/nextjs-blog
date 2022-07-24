@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.min-h-screen {
+    background-image: url("https://api.ghser.com/random/api.php");
+}
