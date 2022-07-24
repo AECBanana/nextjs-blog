@@ -23,35 +23,34 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
         <div>
-          <div class='prose'>
-            <h1>Works</h1>
-            <div class='not-prose'>
-              <ul>
-                {allPostsData.map(({ id, date, title, cover, tag, tagType }) => (
-                  <li className={utilStyles.listItem} key={id}>
-                    <div class="card card-compact bg-base-100 shadow-xl">
-                      <figure><img src={cover} alt="Cover" /></figure>
-                      <div class="card-body">
-                        <h2 class="card-title">{title}<span id='badge' class='badge badge-secondary badge-outline'>{tag}</span></h2>
+
+          <div>
+            <ul>
+              {allPostsData.map(({ id, date, title, cover, tag, tagType }) => (
+                <li className={utilStyles.listItem} key={id}>
+                  <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src={cover} alt="Cover" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">{title}<span id='badge' class='badge badge-secondary badge-outline'>{tag}</span></h2>
 
 
-                        <p><Date dateString={date} /></p>
-                        <div class="card-actions justify-end">
+                      <p><Date dateString={date} /></p>
+                      <div class="card-actions justify-end">
 
-                          <a href={`/posts/${id}`}><button class="btn btn-primary btn-wide text-base-100">View / 查看</button></a>
-                        </div>
+                        <a href={`/posts/${id}`}><button class="btn btn-primary btn-wide text-base-100">View / 查看</button></a>
                       </div>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-
-
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
 
+
+
         </div>
+
+
 
       </section>
     </Layout>

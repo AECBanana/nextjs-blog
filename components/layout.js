@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
+
 import Link from 'next/link'
 import Date from '../components/date'
+import { NextURL } from 'next/dist/server/web/next-url'
+import { parseUrl } from 'next/dist/shared/lib/router/utils/parse-url'
 
 
 const name = 'AeCw'
@@ -18,31 +21,43 @@ export default function Layout({ children, home }) {
                     name="?"
                     content="?"
                 />
-                <meta
-                    property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </head>
-            <div className={styles.container}>
-                <header>
-                    <div class='card w-144 bg-base-100 shadow-xl'>
-                        <div class='card-body items-center text-center'>
-                            <div class='avatar'>
-                                <div class='w-114 rounded-full'>
-                                    <Image
-                                        priority
-                                        src="/images/profile.jpg"
-                                        className={utilStyles.borderCircle}
-                                        height={144}
-                                        width={144}
-                                        alt={name}
-                                    />
-                                </div>
+            {/* 大的图 */}
+            {<div class="hero min-h-screen">
+                <div class="hero-overlay bg-opacity-60">
+                </div>
+                <div class="hero-content  text-neutral-content">
+
+                    <div class="max-w-md text-center">
+                        <div class='avatar'>
+                            <div class='w-114 rounded-full'>
+                                <Image
+                                    priority
+                                    src="/images/profile.jpg"
+                                    className={utilStyles.borderCircle}
+                                    height={144}
+                                    width={144}
+                                    alt={name}
+                                />
                             </div>
+                        </div>
+                        <h1 class="mb-5 text-5xl font-bold">AeCw</h1>
+                        <p class="mb-5">剑走偏锋的妹弓。音游爱好者。</p>
+                        <button class="btn btn-sm btn-ghost"><a href='https://github.com/AECBanana'>Github</a></button>
+                        <button class="btn btn-sm btn-ghost"><a href='mailto:aecbanana@outlook.com'>邮箱 / Email</a></button>
+                    </div>
+                </div>
+            </div>}
+            <div>
+                <header>
+
+
+                    {/* 头像 */}
+                    {/* {<div class='card w-144 bg-base-100 shadow-xl'>
+                        <div class='card-body items-center text-center'>
+                            
                             <h1 class='card-title'>{name}</h1>
                             <div class='card-actions '>
                                 <button class="btn btn-sm btn-ghost"><a href='https://github.com/AECBanana'>Github</a></button>
@@ -50,7 +65,9 @@ export default function Layout({ children, home }) {
                             </div>
 
                         </div>
-                    </div>
+                    </div>} */}
+
+
                 </header>
             </div>
             <div className={styles.card}>
