@@ -152,14 +152,20 @@ ComboPosition: 80
 
 <div>
 <div>
-<input type="number" placeholder="ColumnWidth"  id="print" class="input w-full max-w-xs" />
-<button class="btn" onclick="Function()">计算</button>
+<div class="form-control">
+  <div class="input-group">
+    <input type="number" placeholder="input ColumnWidth" id="print" class="input input-bordered" />
+    <button class="btn btn-square" onclick="Function()">
+      计算
+    </button>
+  </div>
+</div>
 <p id="res"></p>
 <script>
 function Function()
 {
     var input = parseInt(document.getElementById("print").value)
-    var ress =["结果：<br/>"]
+    var ress =["结果"]
     for (var i = 1; i <= 18; i++) {
         var res = 427-((input*i)/2)
         ress.push("<br/>keys:"+i+"     ColumnWidth:"+res)
