@@ -45,20 +45,23 @@
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 .listItem {
   margin: 0 0 1.25rem;
+
 }
 
 .lightText {
   color: #666;
 }
+
 .linkIcon a {
   margin: 0.5rem;
 }
-.linkIcon a:hover{
+
+.linkIcon a:hover {
   background-color: #00b7ff;
   padding: 1ch;
 }

@@ -2,13 +2,12 @@ import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
-import styles from '../../components/layout.module.css'
-import Link from 'next/link'
+
 
 export default function Post({ postData }) {
     return (
         <Layout>
-            <div class="text-sm breadcrumbs">
+            <div class="text-sm breadcrumbs card-body m-auto">
                 <ul>
                     <li><a href="/">
                         <button class="btn btn-ghost">Home</button>
@@ -16,24 +15,26 @@ export default function Post({ postData }) {
                     <li><a>{postData.id}</a></li>
                 </ul>
             </div>
-
-            <div class='card card-compact shadow-xl bg-base-100'>
+            {/* 文章内容 */}
+            <div class='card-body m-auto'>
                 <head>
                     <title>{postData.title}</title>
                 </head>
 
-                <div class='card-body'>
+                <div>
                     <article>
 
                         {/* <a href="/">
                             <button class="btn btn-ghost">Back</button>
                         </a> */}
-                        <h1 class='card-title'>{postData.title}</h1>
+                        <h1>{postData.title}</h1>
                         <div className={utilStyles.lightText}>
                             <Date dateString={postData.date} />
                         </div>
                         <br />
-                        <div class='prose prose-img:rounded-xl max-w-none' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                        <div class='prose prose-img:rounded-xl max-w-none min-w-none' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+
                     </article>
                 </div>
 

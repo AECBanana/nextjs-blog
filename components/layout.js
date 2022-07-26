@@ -1,12 +1,6 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-
-import Link from 'next/link'
-import Date from '../components/date'
-import { NextURL } from 'next/dist/server/web/next-url'
-import { parseUrl } from 'next/dist/shared/lib/router/utils/parse-url'
 
 
 const name = 'AeCw'
@@ -14,7 +8,7 @@ export const siteTitle = 'AeCw Blog'
 
 export default function Layout({ children, home }) {
     return (
-        <div className={styles.flex}>
+        <div class='items-center'>
             <head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -28,7 +22,7 @@ export default function Layout({ children, home }) {
             {<div class="hero min-h-screen">
                 <div class="hero-overlay bg-opacity-60">
                 </div>
-                <div class="hero-content  text-neutral-content">
+                <div class="hero-content text-neutral-content">
 
                     <div class="max-w-md text-center">
                         <div class='avatar'>
@@ -70,7 +64,8 @@ export default function Layout({ children, home }) {
 
                 </header>
             </div>
-            <div className={styles.card}>
+            {/* this */}
+            <div>
                 <main>{children}</main>
                 {home ? (
                     <div tabindex="0" class="collapse">
