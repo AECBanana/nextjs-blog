@@ -1,7 +1,7 @@
 ---
 title: '如何上手Mania10K'
 date: '2022-07-24'
-cover: ''
+cover: 'https://rino.xn--xj8hhl.tk/images/mania10k/2.png'
 tag: '教程 & 浅谈'
 ---
 
@@ -9,20 +9,17 @@ tag: '教程 & 浅谈'
 
 如果你正在玩osu! 或者任何PC的音游游戏，那么你可能没想过有10k的模式，因为它太小众了；目前截止国内活跃的10k玩家也就20来人。如果你是玩累了7k 或者4k 6k之类的玩家，想来尝试不一样的mania体验，那么你可以来试试10k。
 
-如果你听到10k就一脸拒绝，一口口大佬，一口口我不会，你不会去尝试的，而且 本文也不适合您，您可以直接关闭。如果很勇敢继续看下去的话，希望您能对10k有新的认识。
-
-
-
 **前排警告，如果您打mania就是为了段位，我不推荐你玩10k，更推荐你玩4k；而且10k也没什么段位！！！因为它key数多，静下心玩才能体会到它的乐趣**
 
 ---
 
 ## Mania10k 游玩的准备
 
-首先，你需要一个osu!的客户端    [osu!官网](https://osu.ppy.sh/)
+首先，你需要一个osu!的客户端<div><a href='https://osu.ppy.sh/'><button class="btn btn-xs btn-outline">osu!官网</button></a></div>
+
 打开游戏，打开游戏设置`Ctrl + O`
 
-![](https://rino.xn--xj8hhl.tk/images/mania10k/1.jpg)
+![](https://rino.xn--xj8hhl.tk/images/mania10k/1.png)
 
 选择5k co-op键位即可设置10k的键位
 
@@ -40,9 +37,22 @@ tag: '教程 & 浅谈'
 
 ### 键位推荐
 
-![](https://rino.xn--xj8hhl.tk/images/mania10k/2.jpg)
+![](https://rino.xn--xj8hhl.tk/images/mania10k/2.png)
 
 这是我的常用键位，如果你对键位感觉很别扭，你可以去看看la的键位教程[BV1Nt4y1s73R](https://www.bilibili.com/video/BV1Nt4y1s73R)
+
+</div>
+<div>
+<div class="collapse collapse-arrow">
+  <input type="checkbox" class="peer" /> 
+  <div class="collapse-title bg-base-100 text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content rounded-box">
+    la的键位教程
+  </div>
+  <div class="collapse-content bg-base-100 text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content rounded-box"> 
+    <iframe src="//player.bilibili.com/player.html?aid=981831916&bvid=BV1Nt4y1s73R&cid=726552119&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+  </div>
+</div>
+</div>
 
 ### 皮肤
 
@@ -154,7 +164,5 @@ ComboPosition: 80
 这里推荐你的映射把它们归类 譬如左右手分为2大类，你的中指是它们的中心
 
 12311 12321 这样去分类你的note和读谱，你的note皮肤也需要设置为相应的颜色，这需要你的皮肤有这个素材；如果你没有素材，你可以打开你的ps进行绘制。
-
-
 
 未完待续 我先吃饭

@@ -5,3 +5,15 @@
 .min-h-screen {
     background-image: url("https://api.ghser.com/random/api.php");
 }
+
+.card-body {
+    max-width: 1200px;
+}
+
+.prose {
+    min-width: none;
+}
+
+.card {
+    max-width: 400px;
+}
