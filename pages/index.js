@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Date from '../components/date'
 
@@ -22,10 +21,9 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
 
-
         <div class='grid grid-cols-1 md:grid-cols-3 card-body m-auto '>
 
-          {allPostsData.map(({ id, date, title, cover, tag, tagType }) => (
+          {allPostsData.map(({ id, date, title, cover, tag }) => (
             <div class='col-span-1 mt-4 ml-auto mr-auto mb-auto' key={id}>
               <div class="card card-compact bg-base-100 shadow-xl">
                 <figure><img src={cover} alt="Cover" /></figure>
@@ -43,12 +41,6 @@ export default function Home({ allPostsData }) {
           ))}
 
         </div>
-
-
-
-
-
-
 
       </section>
     </Layout>

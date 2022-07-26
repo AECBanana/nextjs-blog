@@ -9,7 +9,9 @@ tag: '教程 & 浅谈'
 
 如果你正在玩osu! 或者任何PC的音游游戏，那么你可能没想过有10k的模式，因为它太小众了；目前截止国内活跃的10k玩家也就20来人。如果你是玩累了7k 或者4k 6k之类的玩家，想来尝试不一样的mania体验，那么你可以来试试10k。
 
-**前排警告，如果您打mania就是为了段位，我不推荐你玩10k，更推荐你玩4k；而且10k也没什么段位！！！因为它key数多，静下心玩才能体会到它的乐趣**
+**前排警告，如果您打mania就是为了段位，我不推荐，10k也没什么段位，很遗憾**
+
+本文精心编写 内置小工具
 
 ---
 
@@ -41,18 +43,10 @@ tag: '教程 & 浅谈'
 
 这是我的常用键位，如果你对键位感觉很别扭，你可以去看看la的键位教程[BV1Nt4y1s73R](https://www.bilibili.com/video/BV1Nt4y1s73R)
 
-</div>
-<div>
-<div class="collapse collapse-arrow">
-  <input type="checkbox" class="peer" /> 
-  <div class="collapse-title bg-base-100 text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content rounded-box">
-    la的键位教程
-  </div>
-  <div class="collapse-content bg-base-100 text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content rounded-box"> 
-    <iframe src="//player.bilibili.com/player.html?aid=981831916&bvid=BV1Nt4y1s73R&cid=726552119&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-  </div>
-</div>
-</div>
+
+<iframe src="//player.bilibili.com/player.html?aid=981831916&bvid=BV1Nt4y1s73R&cid=726552119&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
 
 ### 皮肤
 
@@ -147,6 +141,38 @@ ComboPosition: 80
 
 详细参考[皮肤 / skin.ini · wiki | osu!](https://osu.ppy.sh/wiki/zh/Skinning/skin.ini#[mania])
 
+#### 对齐面板到屏幕中间？
+
+输入你皮肤配置的ColumnWidth数值。只填写一个数值即可 
+
+*例如4k的数值是55,55,55,55 那么你在下方填写55即可*
+
+该计算器只支持统一大小的ColumnWidth数值
+
+
+<div>
+<div>
+<input type="number" placeholder="ColumnWidth"  id="print" class="input w-full max-w-xs" />
+<button class="btn" onclick="Function()">计算</button>
+<p id="res"></p>
+<script>
+function Function()
+{
+    var input = parseInt(document.getElementById("print").value)
+    var ress =["结果：<br/>"]
+    for (var i = 1; i <= 18; i++) {
+        var res = 427-((input*i)/2)
+        ress.push("<br/>keys:"+i+"     ColumnWidth:"+res)
+    }
+    document.getElementById("res").innerHTML=ress
+}
+</script>
+</div>
+</div>
+
+算法如下
+我以7K为例，宽度使用46,40,46,40,46,40,46。总和A=304，将其除2，A/2=152，然后ColumnStart的数值就是427-A/2=427-152=275
+
 #### 皮肤下载
 
 只要支持mania皮肤的即可通过以上配置去设置你的10k模式皮肤
@@ -165,4 +191,4 @@ ComboPosition: 80
 
 12311 12321 这样去分类你的note和读谱，你的note皮肤也需要设置为相应的颜色，这需要你的皮肤有这个素材；如果你没有素材，你可以打开你的ps进行绘制。
 
-未完待续 我先吃饭
+未完待续
