@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
         <div class='grid grid-cols-1 md:grid-cols-3 card-body m-auto '>
 
           {allPostsData.map(({ id, date, title, cover, tag, tagType }) => (
-            <div class='col-span-1 mt-0 ml-auto mr-auto mb-auto' key={id}>
+            <div class='col-span-1 mt-4 ml-auto mr-auto mb-auto' key={id}>
               <div class="card card-compact bg-base-100 shadow-xl">
                 <figure><img src={cover} alt="Cover" /></figure>
                 <div class="card-body">
